@@ -1,0 +1,25 @@
+{
+  "name": "githubprnotify",
+  "version": "1.0.0",
+  "description": "GitHubAppを使った通知機能のサンプル",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "start": "tsx src/app.ts",
+    "build": "tsc",
+    "prod": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@line/bot-sdk": "^10.6.0",
+    "@octokit/webhooks": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}
